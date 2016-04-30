@@ -1,0 +1,5 @@
+# vim
+*.swp
+
+# ansible
+provisioning/site.retry

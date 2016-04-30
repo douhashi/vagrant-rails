@@ -1,1 +1,5 @@
+[local-development-servers]
 192.168.33.11
+
+[local:children]
+local-development-servers

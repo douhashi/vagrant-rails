@@ -16,6 +16,11 @@ Vagrant.configure(2) do |config|
     vb.memory = 1024
   end
 
+  # TODO: After vagrant 1.8.2
+  #config.vm.provision :ansible_local do |ansible|
+  #  ansible.playbook  = "provisioning/site.yml"
+  #  ansible.inventory = "provisioning/development"
+  #end
   config.vm.provision :shell do |sh|
     sh.path = "provision.sh"
     sh.args = "provisioning/site.yml provisioning/development"

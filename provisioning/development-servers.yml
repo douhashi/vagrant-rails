@@ -1,0 +1,5 @@
+---
+- hosts: local-development-servers
+  become: yes
+  roles:
+    - rbenv

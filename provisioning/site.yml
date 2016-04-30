@@ -1,0 +1,9 @@
+---
+- name: Build Rails Environment
+  sudo: yes
+  sudo_user: root
+  hosts: localhost
+  connection: local
+
+  roles:
+    - {role: apt-update}
